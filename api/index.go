@@ -1,4 +1,4 @@
-package index
+package handler
 
 import (
 	"database/sql"
@@ -19,7 +19,7 @@ type Post struct {
 	Content string `json:"content"`
 }
 
-func index() {
+func Handler() {
 	// Load environment variables from .env file
 	err := godotenv.Load()
 	if err != nil {
